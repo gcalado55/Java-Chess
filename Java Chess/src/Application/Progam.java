@@ -1,5 +1,6 @@
 package Application;
 
+import BoardGame.Board;
 import BoardGame.Position;
 
 public class Progam {
