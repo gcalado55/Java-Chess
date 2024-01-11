@@ -20,7 +20,7 @@ public class Progam {
         while (true){
             try {
                 Ui.clearScreen();
-                Ui.printBoard(chessMatch.getPieces());
+                Ui.printMatch(chessMatch);
                 System.out.print("\nSource: ");
                 ChessPosition source = Ui.readChessPosition(sc);
 

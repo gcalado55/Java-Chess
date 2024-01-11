@@ -3,14 +3,14 @@ package BoardGame;
 public class Position {
 
     private Integer row;
-    private Integer collumn;
+    private Integer column;
 
     public Position(){
     }
 
-    public Position(Integer row, Integer collumn) {
+    public Position(Integer row, Integer column) {
         this.row = row;
-        this.collumn = collumn;
+        this.column = column;
     }
 
     public Integer getRow() {
@@ -21,24 +21,24 @@ public class Position {
         this.row = row;
     }
 
-    public Integer getCollumn() {
-        return collumn;
+    public Integer getColumn() {
+        return column;
     }
 
-    public void setCollumn(Integer collumn) {
-        this.collumn = collumn;
+    public void setColumn(Integer column) {
+        this.column = column;
     }
 
-    public void setValues(int row, int collumn){
+    public void setValues(int row, int column){
         this.row = row;
-        this.collumn = collumn;
+        this.column = column;
     }
 
     @Override
     public String toString(){
         return row
                 +", "
-                +collumn;
+                +column;
     }
 
 
