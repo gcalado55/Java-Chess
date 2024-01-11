@@ -21,11 +21,14 @@ public class Progam {
             try {
                 Ui.clearScreen();
                 Ui.printBoard(chessMatch.getPieces());
-                System.out.println();
-                System.out.print("Source: ");
+                System.out.print("\nSource: ");
                 ChessPosition source = Ui.readChessPosition(sc);
 
-                System.out.print("Target: ");
+                boolean[][] possibleMoves = chessMatch.possibleMoves(source);
+                Ui.clearScreen();
+                Ui.printBoard(chessMatch.getPieces(), possibleMoves);
+
+                System.out.print("\nTarget: ");
                 ChessPosition target = Ui.readChessPosition(sc);
 
                 ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
