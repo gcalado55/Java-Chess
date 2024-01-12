@@ -64,6 +64,10 @@ public class Ui {
         printCapturedPieces(captured);
         System.out.println("Turn: " + chessMatch.getTurn());
         System.out.print("Waiting player: ");
+        if(chessMatch.getCheck()){
+            System.out.println("CHECK");
+        }
+
         if(chessMatch.getCurrentPlayer() == Color.BLACK) {
             System.out.print(ANSI_YELLOW);
             System.out.print(chessMatch.getCurrentPlayer());
