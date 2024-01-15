@@ -7,6 +7,10 @@ import Chess.Color;
 
 public class Pawn extends ChessPiece {
 
+    @Override
+    public String toString(){
+        return "P";
+    }
 
     public Pawn(Board board, Color color) {
         super(board, color);
@@ -57,11 +61,6 @@ public class Pawn extends ChessPiece {
             }
         }
         return mat;
-    }
-
-    @Override
-    public String toString(){
-        return "P";
     }
 
 }
