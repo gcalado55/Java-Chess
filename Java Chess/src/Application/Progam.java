@@ -20,7 +20,7 @@ public class Progam {
         ChessMatch chessMatch = new ChessMatch();
         List<ChessPiece> captured = new ArrayList<>();
 
-        while (true){
+        while (!chessMatch.getCheckMate()){
             try {
                 Ui.clearScreen();
                 Ui.printMatch(chessMatch, captured);
@@ -50,8 +50,7 @@ public class Progam {
                 sc.nextLine();
             }
         }
-
-
-
+        Ui.clearScreen();
+        Ui.printMatch(chessMatch, captured);
     }
 }
